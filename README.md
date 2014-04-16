@@ -6,7 +6,7 @@ Shell scripts to install useful tools and programs in new (fresh) Ubuntu install
 Installation
 =============
 1. download: ubuntuFresh_v0.x.sh
-2. give run permission: chmod +x ubuntuFresh_v0.x.sh
+2. chmod +x ubuntuFresh_v0.x.sh
 3. run: sudo ./ubuntuFresh_v0.x.sh
 
 
