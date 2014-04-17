@@ -27,9 +27,9 @@ echo -e "Update repository before starting installing software...${green}[OK]${e
 echo "${blue}#######################################################################"
 echo "## Installing packages: basic_tools                                 ##"
 echo "#######################################################################${endColor}"
-sudo apt-get -y install htop rar unrar lm-sensors mc vnstat vlc \\ 
-                        qnapi synaptic whois traceroute tilda gedit \\
-                        ufw gufw
+sudo apt-get -y install htop rar unrar lm-sensors mc vnstat vlc \
+                        qnapi synaptic whois traceroute tilda gedit \
+                        ufw gufw unetbootin winusb
                         
                         
 # developers_packages
@@ -61,15 +61,15 @@ sudo add-apt-repository -y ppa:atareao/atareao
 sudo apt-get update
 
 # installing packages from ppa's
-sudo apt-get -y install spotify-client fluxgui indicator-notifications recent-notifications \\
-                        indicator-brightness indicator-sensors lm-sensors my-weather-indicator \\ 
+sudo apt-get -y install spotify-client fluxgui indicator-notifications recent-notifications \
+                        indicator-brightness indicator-sensors lm-sensors my-weather-indicator \
                         indicator-sysmonitor indicator-cpufreq
                         
 echo "${blue}#######################################################################"
 echo "## Installing packages: LaTeX dependencies and TeXmaker env.  ##"
 echo "#######################################################################${endColor}"
 
-sudo apt-get install texmaker texlive-extras
+#sudo apt-get install texmaker texlive-extras
 
 
 echo "${blue}#######################################################################"
