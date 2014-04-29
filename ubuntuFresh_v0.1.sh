@@ -59,6 +59,9 @@ sudo add-apt-repository -y ppa:jconti/recent-notifications
 sudo add-apt-repository -y ppa:noobslab/indicators
 # my-weather-indicator
 sudo add-apt-repository -y ppa:atareao/atareao
+# netspeed indicator
+sudo add-apt-repository -y ppa:nilarimogard/webupd8
+
 
 # update for refresh repo (new packages from ppa's)
 sudo apt-get update
@@ -69,13 +72,14 @@ echo 'Please wait...' && sudo apt-get update 2> klucze > /dev/null && sed -i '/N
 sudo apt-get -y install spotify-client fluxgui indicator-notifications recent-notifications \
                         indicator-brightness indicator-sensors lm-sensors my-weather-indicator \
                         indicator-sysmonitor indicator-cpufreq
-                        
+sudo apt-get -y install indicator-netspeed
+
 indicator-notifications&
+indicator-netspeed&
 
-echo -e "${blue}#######################################################################"
-echo -e "## Installing packages: LaTeX dependencies and TeXmaker env.         ##"
-echo -e "#######################################################################${endColor}"
-
+#echo -e "${blue}#######################################################################"
+#echo -e "## Installing packages: LaTeX dependencies and TeXmaker env.         ##"
+#echo -e "#######################################################################${endColor}"
 #sudo apt-get install texmaker texlive-extras
 
 
@@ -113,13 +117,13 @@ sudo apt-get -y -f install
 #for enable minimize on click
 sudo apt-get install compizconfig-settings-manager
 
-#google drive support
-sudo add-apt-repository -y ppa:alessandro-strada/ppa
-sudo apt-get update
-sudo apt-get -y install google-drive-ocamlfuse
-google-drive-ocamlfuse
-mkdir ~/gdrive
-google-drive-ocamlfuse ~/gdrive
+#google drive support (not working well)
+#sudo add-apt-repository -y ppa:alessandro-strada/ppa
+#sudo apt-get update
+#sudo apt-get -y install google-drive-ocamlfuse
+#google-drive-ocamlfuse
+#mkdir ~/gdrive
+#google-drive-ocamlfuse ~/gdrive
 
 
 
