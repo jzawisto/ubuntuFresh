@@ -76,6 +76,11 @@ sudo apt-get -y install indicator-netspeed
 
 indicator-notifications&
 indicator-netspeed&
+indicator-brightness&
+indicator-sensors& 
+my-weather-indicator&
+indicator-cpufreq&
+
 
 #echo -e "${blue}#######################################################################"
 #echo -e "## Installing packages: LaTeX dependencies and TeXmaker env.         ##"
