@@ -43,6 +43,9 @@ echo -e "#######################################################################
 sudo apt-get -y install build-essential make git
 sudo apt-get -y build-dep eclipse-cdt 
 #if eclipse_4.2 then wget dropbox/eclipse....
+sudo add-apt-repository -y ppa:webupd8team/atom
+sudo apt-get update
+sudo apt-get -y install atom
 
 
 
@@ -151,6 +154,10 @@ gsettings set com.canonical.Unity.Lenses disabled-scopes "['more_suggestions-ama
 gsettings set com.canonical.desktop.interface scrollbar-mode normal
 # gsettings reset com.canonical.desktop.interface scrollbar-mode #get back
 
+#dark theme
+sudo add-apt-repository -y ppa:noobslab/themes
+sudo apt-get update
+sudo apt-get -y install ambiance-dark-red
 
 
 
