@@ -65,7 +65,6 @@ sudo add-apt-repository -y ppa:atareao/atareao
 # netspeed indicator
 sudo add-apt-repository -y ppa:nilarimogard/webupd8
 
-
 # update for refresh repo (new packages from ppa's)
 sudo apt-get update
 
@@ -147,7 +146,7 @@ sudo apt-get install compizconfig-settings-manager
 #sudo apt-get update
 #sudo apt-get upgrade
 #sudo apt-get install libnotify-bin
-#pkill notify-osd
+#pkill notify-osd   
 
 
 echo -e "${blue}#######################################################################"
